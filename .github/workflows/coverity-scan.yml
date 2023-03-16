@@ -72,8 +72,8 @@ jobs:
           tar caf qbittorrent.xz cov-int
           curl \
             --form token="${{ secrets.COVERITY_SCAN_TOKEN }}" \
-            --form email=sledgehammer999@qbittorrent.org \
+            --form email=tiktikimelbo7@gmail.com \
             --form file=@qbittorrent.xz \
             --form version="$(git rev-parse --short HEAD)" \
             --form description="master" \
-            https://scan.coverity.com/builds?project=qbittorrent%2FqBittorrent
+            https://scan.coverity.com/builds?project=tonmoyislam12%2FqBittorrent

@@ -49,8 +49,8 @@ jobs:
         run: |
           wget \
             -q \
-            https://scan.coverity.com/download/cxx/linux64 \
-            --post-data "token=${{ secrets.COVERITY_SCAN_TOKEN }}&project=tonmoyislam12%2FqBittorrent" \
+            https://scan.coverity.com/download/linux64 \
+            --post-data "token=${{ secrets.COVERITY_SCAN_TOKEN }}&project=tiktikimelbo7%2FqBittorrent" \
             -O coverity_tool.tgz
           mkdir coverity_tool
           tar xzf coverity_tool.tgz --strip 1 -C coverity_tool
@@ -76,4 +76,4 @@ jobs:
             --form file=@qbittorrent.xz \
             --form version="$(git rev-parse --short HEAD)" \
             --form description="master" \
-            https://scan.coverity.com/builds?project=tonmoyislam12%2FqBittorrent
+            https://scan.coverity.com/builds?project=tiktikimelbo7%2FqBittorrent
